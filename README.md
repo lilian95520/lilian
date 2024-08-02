@@ -27,9 +27,6 @@ To install the necessary Docker image, run the following command:
 ```sh
 docker pull node:19-bullseye
 
-### Part 2: USAGE.md
-
-```markdown
 ## Usage
 ### Starting the Project
 1. Fill in the `credential.json` and `atlassian-connect.json` files with the necessary information.
