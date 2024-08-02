@@ -8,10 +8,10 @@ Clara-Jira-AI is a project designed to enhance Jira functionalities using AI cap
 ## Table of Contents
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
 - [Usage](#usage)
-  - [Starting the Project](#starting-the-project)
+- [Starting the Project](#starting-the-project)
 - [Authors](#authors)
 
 ## Getting Started
@@ -26,7 +26,7 @@ Make sure you have the following installed:
 To install the necessary Docker image, run the following command:
 ```sh
 docker pull node:19-bullseye
-
+```
 ## Usage
 ### Starting the Project
 1. Fill in the `credential.json` and `atlassian-connect.json` files with the necessary information.
