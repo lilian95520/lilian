@@ -2,43 +2,57 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-Une petite description du projet
+## Introduction
+Clara-Jira-AI is a project designed to enhance Jira functionalities using AI capabilities. This README will guide you through the setup, installation, and usage of the project.
 
-## Pour commencer
+## Table of Contents
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Starting the Project](#starting-the-project)
+- [Authors](#authors)
 
-Entrez ici les instructions pour bien débuter avec votre projet...
+## Getting Started
+These instructions will help you set up and run the Clara-Jira-AI project on your local machine.
 
-### Pré-requis
-
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Rancher deskop
-- Node:19:bullseye
-- 
+### Prerequisites
+Make sure you have the following installed:
+- [Rancher Desktop](https://rancherdesktop.io/)
+- [Node.js 19 (Bullseye)](https://hub.docker.com/_/node)
 
 ### Installation
-``docker pull node:19-bullseye``
+To install the necessary Docker image, run the following command:
+```sh
+docker pull node:19-bullseye
 
+### Part 2: USAGE.md
 
-## Démarrage
-Remplir le fichier ``credential.json`` & ``atlassian-connect-json``
+```markdown
+## Usage
+### Starting the Project
+1. Fill in the `credential.json` and `atlassian-connect.json` files with the necessary information.
+2. Run the following commands to build and start the project:
+    ```sh
+    docker compose -f docker-compose.yml -p clarai up --build -d --pull always --force-recreate
+    ```
+3. Access the container shell:
+    ```sh
+    docker exec -it clarai-node-1 sh
+    ```
+4. Navigate to the project directory:
+    ```sh
+    cd clara-ai
+    ```
+5. Build the project:
+    ```sh
+    npm run build
+    ```
+6. Start the project:
+    ```sh
+    npm start
+    ```
 
-``docker compose -f docker-compose.yml -p clarai up --build -d --pull always --force-recreate``
-
-``docker exec -it clarai-node-1 sh``
-
-``cd clara-ai``
-
-``npm run build``
-
-``npm start``
-
-
-
-
-## Auteurs
-Lilian Allio
-
-
-
-
+## Authors
+- Lilian Allio
